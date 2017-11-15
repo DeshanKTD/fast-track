@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Employees xmlns="https://www.example.com/employees">
+<Employee id="1">
+<name>pankaj</name>
+<age>30</age>
+<role>java developer</role>
+<gender>Male</gender>
+</Employee>
+<Employee id="2">
+<name>Lisa</name>
+<age>23</age>
+<role>Manager</role>
+<gender>Female</gender>
+</Employee>
+</Employees>

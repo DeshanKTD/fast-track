@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fast.iml" filepath="$PROJECT_DIR$/fast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stax/stax.iml" filepath="$PROJECT_DIR$/stax/stax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xmldom/xmldom.iml" filepath="$PROJECT_DIR$/xmldom/xmldom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xmlsax/xmlsax.iml" filepath="$PROJECT_DIR$/xmlsax/xmlsax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xmlvalidate/xmlvalidate.iml" filepath="$PROJECT_DIR$/xmlvalidate/xmlvalidate.iml" />
+    </modules>
+  </component>
+</project>

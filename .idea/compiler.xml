@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="stax" />
+        <module name="xmldom" />
+        <module name="xmlsax" />
+        <module name="xmlvalidate" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="axis" target="1.5" />
+      <module name="axis2service" target="1.5" />
+      <module name="axisservice" target="1.5" />
+      <module name="axiswebservice" target="1.5" />
+      <module name="fast" target="1.5" />
+      <module name="stax" target="1.6" />
+      <module name="xml" target="1.5" />
+      <module name="xmldom" target="1.5" />
+      <module name="xmlsax" target="1.5" />
+      <module name="xmlvalidate" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
