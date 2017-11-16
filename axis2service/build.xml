@@ -1,0 +1,57 @@
+<project name="Axis2-POJO" basedir="." default="generate.aar">
+    <property environment="env"/>
+ 
+    <property name="axis2.home" value="../../../learn/fasttrack/axis/binary/axis2-1.7.6/" />
+ 
+    <property name="dest.dir" value="build" />
+ 
+    <property name="dest.dir.classes" value="${dest.dir}/classes" />
+ 
+    <path id="build.class.path">
+        <fileset dir="${axis2.home}/lib">
+            <include name="*.jar" />
+        </fileset>
+          <pathelement location="${dest.dir.classes}" />
+    </path>
+ 
+    <target name="clean">
+        <delete dir="${dest.dir}" />
+    </target>
+ 
+    <target name="prepare">
+ 
+        <mkdir dir="${dest.dir}" />
+ 
+        <mkdir dir="${dest.dir.classes}" />
+ 
+        <mkdir dir="${dest.dir.classes}/META-INF" />
+ 
+    </target>
+ 
+    <target name="generate.aar" depends="clean,prepare">
+ 
+        <copy file="src/META-INF/services.xml"
+            tofile="${dest.dir.classes}/META-INF/services.xml" overwrite="true" />
+ 
+        <javac srcdir="src" destdir="${dest.dir.classes}"
+            includes="net/codejava/ws/axis2/CalculatorService.java">
+        </javac>
+ 
+        <jar basedir="${dest.dir.classes}" destfile="${dest.dir}/CalculatorService.aar" />
+ 
+    </target>
+
+    <target name="rpc.client.compile">
+        <javac srcdir="src" destdir="${dest.dir.classes}"
+                includes="net/codejava/ws/axis2/CalculatorRPCClient.java">
+            <classpath refid="build.class.path" />
+        </javac>
+    </target>
+ 
+    <target name="rpc.client.run">
+        <java classname="net.codejava.ws.axis2.CalculatorRPCClient" fork="true">
+            <classpath refid="build.class.path" />
+        </java>
+    </target>
+ 
+</project>
