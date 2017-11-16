@@ -1,0 +1,15 @@
+<service>
+    <description>
+        This Web Service Validates CreditCard Number.
+    </description>
+    <parameter name="ServiceClass">com.axis2.ws.OrdersImpl</parameter>
+    <operation name="placeOrder">
+        <messageReceiver
+                class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </operation>
+    <operation name="getOrderInfo">
+        <messageReceiver
+                class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </operation>
+
+</service>
