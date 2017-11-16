@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="axistest" />
         <module name="stax" />
         <module name="xmldom" />
         <module name="xmlsax" />
@@ -16,6 +17,7 @@
       <module name="axis" target="1.5" />
       <module name="axis2service" target="1.5" />
       <module name="axisservice" target="1.5" />
+      <module name="axistest" target="1.5" />
       <module name="axiswebservice" target="1.5" />
       <module name="fast" target="1.5" />
       <module name="stax" target="1.6" />

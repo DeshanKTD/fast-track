@@ -15,6 +15,7 @@
         <module>xmlvalidate</module>
         <module>axis</module>
         <module>axiswebservice</module>
+        <module>axistest</module>
 
 
     </modules>
